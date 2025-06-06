@@ -24,18 +24,6 @@ class _mainpagescreenState extends State<mainpagescreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-      appBar: AppBar(
-        title: Text("WhatsApp", style: GoogleFonts.robotoSerif(fontSize: 20,color: const Color.fromARGB(255, 255, 255, 255))),
-        backgroundColor: const Color.fromARGB(255, 8, 215, 28),
-        actions: [
-          Icon(Icons.qr_code_2_outlined),
-          Padding(padding: EdgeInsetsGeometry.only(right: 25)),
-          Icon(Icons.camera_alt_outlined),
-          Padding(padding: EdgeInsetsGeometry.only(right: 25)),
-          Icon(Icons.menu),
-          Padding(padding: EdgeInsetsGeometry.only(right: 25)),
-        ],
-      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Icon(Icons.message_outlined),
