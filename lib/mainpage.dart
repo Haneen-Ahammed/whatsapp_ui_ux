@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:whatsapp_ui_ux/call.dart';
+import 'package:whatsapp_ui_ux/chatbotpage.dart';
 import 'package:whatsapp_ui_ux/chats.dart';
 import 'package:whatsapp_ui_ux/communities.dart';
 import 'package:whatsapp_ui_ux/update.dart';
@@ -25,7 +26,12 @@ class _mainpagescreenState extends State<mainpagescreen> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Chatbotscrren()),
+          );
+        },
         child: Icon(Icons.message_outlined),
         backgroundColor: Colors.green,
       ),
@@ -52,7 +58,7 @@ class _mainpagescreenState extends State<mainpagescreen> {
         ],
         selectedItemColor: Colors.green,
         unselectedItemColor: Colors.white,
-        currentIndex: index                       ,
+        currentIndex: index,
         type: BottomNavigationBarType.shifting,
         onTap: (tapedindex) {
           setState(() {
