@@ -109,6 +109,7 @@ class _ChatbotscrrenState extends State<Chatbotscrren> {
                   child: TextField(
                     controller: msgcontroller,
                     decoration: InputDecoration(
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(25),),
                       hintText: "type...",
                       fillColor: Colors.blueAccent,
                     ),
@@ -139,10 +140,10 @@ class _ChatbotscrrenState extends State<Chatbotscrren> {
         ),
         padding: EdgeInsets.all(12),
         margin: EdgeInsets.symmetric(vertical: 6, horizontal: 12),
-        decoration: BoxDecoration(
+        decoration: BoxDecoration( 
           color: user
-              ? const Color.fromARGB(255, 88, 240, 98)
-              : const Color.fromARGB(255, 108, 197, 237),
+              ? const Color.fromARGB(255, 0, 0, 0)
+              : const Color.fromARGB(195, 102, 102, 102),
           borderRadius: BorderRadius.circular(25),
         ),
       ),
